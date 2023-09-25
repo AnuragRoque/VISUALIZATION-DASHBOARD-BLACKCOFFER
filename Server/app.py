@@ -7,7 +7,7 @@ from pymongo.server_api import ServerApi
 
 app = Flask(__name__)
 CORS(app)
-uri = "mongodb+srv://anuragsingh2445:xJJjhIt4zM28DvZ2@cluster0.hvmrxdi.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://anuragsingh2445:<password>@cluster0.hvmrxdi.mongodb.net/?retryWrites=true&w=majority"
 
 client = MongoClient(uri, server_api=ServerApi('1'))  # Replace with your MongoDB connection string
 db = client["VISUALIZATION-DASHBOARD-BLACKCOFFER"]  # Replace with your database name
